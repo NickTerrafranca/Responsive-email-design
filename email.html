@@ -11,14 +11,17 @@
         @media all and (max-width: 500px), only screen and (max-device-width: 480px) {
 
           .mobile {
-            display:none !important;
+            display: none !important;
           }
           .content {
-            width:320px !important;
+            width: 320px !important;
+            /*not working*/
           }
           .main-text {
-            font-size:20px !important;
+            font-size: 20px !important;
             padding: 0 !important;
+            width: 400px !important;
+            text-align: left !important;
           }
 
         }
@@ -27,8 +30,7 @@
 </style>
 
 <body style="margin: 0; padding: 0;" bgcolor="#F1F1F1">
-
-  <table border="1" cellpadding="0" cellspacing="0" width="100%"> <!-- body table -->
+<!-- body table -->
     <tr>
       <td>
         <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;" class="content">
@@ -84,26 +86,10 @@
             </td>
           </tr>
 
-         <!--  <tr>
-            <td class="main-text" style="padding: 20px 40px 20px 40px; font-size: 15px">
-              <p>
-                <b>Dear Home Cook,</b>
-              </p>
-              <p>
-                When we published the first edition of The America’s Test Kitchen Family Cookbook in 2005, our objective was simple: give home cooks a collection of recipes they can easily master and that will make them confident in the kitchen. This landmark book has now sold more than 800,000 copies and taught countless cooks the best (and foolproof) way to make all their favorite dishes. We’ve tested and perfected thousands of new recipes since then, and we’ve learned more about how to write and present recipes. American families have also evolved—a go-to dish for potlucks could be potato salad, but it might just as well be Cuban black beans and rice. It was time for a major update.
-              </p>
-              <p>
-                <b><i>The America’s Test Kitchen New Family Cookbook</b></i> runs almost 900 pages and includes more than 1,100 new recipes plus 200 classic recipes from the original book for dishes like <b>Crispy Chicken Breasts, Classic Beef Stew,</b> and <b>Ultimate Fudgy Brownies.</b> It features a wipe-clean hardcover and all-new resources like “Learn How” tutorials for core recipes and cooking methods, “All About” sidebars with comprehensive information about key ingredients and techniques, and new-to-this-edition features like “Why This Recipe Works” intros. And we offer a complete shopping guide for essential equipment and ingredient tastings.
-              </p>
-              <p>
-                In short, this all-in-one cookbook will make you a good cook. If you have a food-stained, Post-it-flagged copy of the 2005 volume, you’ll no doubt want all the new recipes and kitchen smarts contained in this 10th anniversary edition. Order your copy of <b><i>The America’s Test Kitchen New Family Cookbook</i></b> directly from us today and pay just $24, a sizable discount off the cover price of $40. Order more than one copy (it makes a thoughtful and practical gift) and you’ll save even more—you’ll get 50% off the cover price of the additional copies.
-              </p>
-            </td>
-            </tr>
- -->
             <tr>
-              <td class="main-text" style="padding: 0 40px 0 40px; font-size: 15px">
-                <table width="400" align="left">
+              <td style="padding: 0 40px 0 40px; font-size: 15px">
+
+                <table class="main-text" width="400" align="left">
                   <tr>
                     <td>
                       <p>
@@ -114,38 +100,36 @@
                       </p>
                     </td>
                   </tr>
-                  </table>
+                </table>
 
-                  <table width="100" align="right" style="vertical-align: canter">
-                    <tr > <td style="padding: 40px 0 0 0;"></td></tr>
-                    <tr>
-                      <td>
-                        <img src="assets/CPK_FTDO_bw_100x184.jpg" alt="From the desk of Christopher Kimball" style="display: block;" />
-                      </td>
-                    </tr>
-                  </table>
-              </td>
-            </tr>
+                <table class="mobile" width="100" align="right">
+                  <tr > <td style="padding: 40px 0 0 0;"></td></tr>
+                  <tr>
+                    <td>
+                      <img src="assets/CPK_FTDO_bw_100x184.jpg" alt="From the desk of Christopher Kimball" style="display: block;" />
+                    </td>
+                  </tr>
+                </table>
 
-            <!-- <tr class="mobile" width="175">
-              <td align="right">
-                <img src="assets/CPK_FTDO_bw_100x184.jpg" alt="From the desk of Christopher Kimball" style="display: block;" />
-              </td>
-            </tr> -->
+                <table class="main-text" align="left">
+                  <tr>
+                    <td >
+                      <p>
+                        <b><i>The America’s Test Kitchen New Family Cookbook</b></i> runs almost 900 pages and includes more than 1,100 new recipes plus 200 classic recipes from the original book for dishes like <b>Crispy Chicken Breasts, Classic Beef Stew,</b> and <b>Ultimate Fudgy Brownies.</b> It features a wipe-clean hardcover and all-new resources like “Learn How” tutorials for core recipes and cooking methods, “All About” sidebars with comprehensive information about key ingredients and techniques, and new-to-this-edition features like “Why This Recipe Works” intros. And we offer a complete shopping guide for essential equipment and ingredient tastings.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
 
-            <tr>
-              <td class="main-text" style="padding: 0 40px 0 40px; font-size: 15px">
-                <p>
-                  <b><i>The America’s Test Kitchen New Family Cookbook</b></i> runs almost 900 pages and includes more than 1,100 new recipes plus 200 classic recipes from the original book for dishes like <b>Crispy Chicken Breasts, Classic Beef Stew,</b> and <b>Ultimate Fudgy Brownies.</b> It features a wipe-clean hardcover and all-new resources like “Learn How” tutorials for core recipes and cooking methods, “All About” sidebars with comprehensive information about key ingredients and techniques, and new-to-this-edition features like “Why This Recipe Works” intros. And we offer a complete shopping guide for essential equipment and ingredient tastings.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="main-text" style="padding: 0 40px 0 40px; font-size: 15px">
-                <p>
-                  In short, this all-in-one cookbook will make you a good cook. If you have a food-stained, Post-it-flagged copy of the 2005 volume, you’ll no doubt want all the new recipes and kitchen smarts contained in this 10th anniversary edition. Order your copy of <b><i>The America’s Test Kitchen New Family Cookbook</i></b> directly from us today and pay just $24, a sizable discount off the cover price of $40. Order more than one copy (it makes a thoughtful and practical gift) and you’ll save even more—you’ll get 50% off the cover price of the additional copies.
-                </p>
+                <table class="main-text" align="left">
+                  <tr>
+                    <td >
+                      <p>
+                        In short, this all-in-one cookbook will make you a good cook. If you have a food-stained, Post-it-flagged copy of the 2005 volume, you’ll no doubt want all the new recipes and kitchen smarts contained in this 10th anniversary edition. Order your copy of <b><i>The America’s Test Kitchen New Family Cookbook</i></b> directly from us today and pay just $24, a sizable discount off the cover price of $40. Order more than one copy (it makes a thoughtful and practical gift) and you’ll save even more—you’ll get 50% off the cover price of the additional copies.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
         </table>
