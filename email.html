@@ -13,6 +13,9 @@
           .mobile {
             display: none !important;
           }
+          .mobile-only {
+            display: block !important;
+          }
           .content {
             width: 320px !important;
             /*not working*/
@@ -23,68 +26,78 @@
             width: 400px !important;
             text-align: left !important;
           }
+          img { max-width: 400px;
+             max-height: 400px;
+           }
+}
+
+        @media all and (min-width: 500px), only screen and (min-device-width: 480px) {
+          .mobile-only {
+            display: none;
+          }
 
         }
     </style>
   </head>
-</style>
 
-<body style="margin: 0; padding: 0;" bgcolor="#F1F1F1">
-<!-- body table -->
-    <tr>
-      <td>
-        <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;" class="content">
-          <tr>
-            <td>
-              <table align="center" border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="100%" class="mobile" >
+  <body style="margin: 0; padding: 0;" bgcolor="#F1F1F1">
+    <table border="1" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td>
+          <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;" class="content">
+            <tr>
+              <td>
+                <table align="center" border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="100%" class="mobile" >
 
-                <tr>
+                  <tr>
 
-                  <td style="font-size: 0; line-height: 0;" width="20">
-                    &nbsp;
-                  </td>
+                    <td style="font-size: 0; line-height: 0;" width="20">
+                      &nbsp;
+                    </td>
 
-                  <td align="left">
-                    <img src="assets/ATK_logo.jpg" alt="ATK Logo"/>
-                  </td>
+                    <td align="left">
+                      <img src="assets/ATK_logo.jpg" alt="ATK Logo"/>
+                    </td>
 
-                  <td align="right">
-                    <a href="#">View in web browser</a>
-                  </td>
+                    <td align="right">
+                      <a href="#">View in web browser</a>
+                    </td>
 
-                  <td style="font-size: 0; line-height: 0;" width="20">
-                    &nbsp;
-                  </td>
+                    <td style="font-size: 0; line-height: 0;" width="20">
+                      &nbsp;
+                    </td>
 
-                </tr>
+                  </tr>
 
-              </table>
-            </td>
-          </tr>
+                </table>
+              </td>
+            </tr>
 
-          <tr>
-            <td align="left">
-              <img src="assets/banner.psd" alt="Cover of The New Family Cookbook" style="display: block;" />
-            </td>
-          </tr>
+            <tr>
+              <td align="left" class="mobile">
+                <img src="assets/banner.psd" alt="Cover of The New Family Cookbook" style="display: block;" />
+              </td>
+            </tr>
 
-          <tr align="center">
-            <td style="margin: 0; padding: 10px 0 0 0; background-color: #2A2828; color: #FFFFFF; font-size: 20px ">
-              All-New Hardcover Edition of the<br/> Best-Selling Classic with 1,100+ New Recipes
-            </td>
-          </tr>
 
-          <tr align="center">
-            <td style="margin: 0; padding: 10px 0 20px 0; background-color: #2A2828; color: #F2E7DD; font-size: 20px ">
-              <button name="button" style="padding: 12px 40px 12px 40px; font-size: 13pt; border: none; background-color:#E80000; color: #FFFFFF; border-radius: 3px; ">SAVE UP TO 50%</button>
-            </td>
-          </tr>
 
-          <tr class="mobile">
-            <td>
-              <img src="assets/SFS_3up_1.psd" alt="Three beutifull plates of food"/>
-            </td>
-          </tr>
+            <tr align="center">
+              <td style="margin: 0; padding: 10px 0 0 0; background-color: #2A2828; color: #FFFFFF; font-size: 20px ">
+                All-New Hardcover Edition of the<br/> Best-Selling Classic with 1,100+ New Recipes
+              </td>
+            </tr>
+
+            <tr align="center">
+              <td style="margin: 0; padding: 10px 0 20px 0; background-color: #2A2828; color: #F2E7DD; font-size: 20px ">
+                <button name="button" style="padding: 12px 40px 12px 40px; font-size: 13pt; border: none; background-color:#E80000; color: #FFFFFF; border-radius: 3px; ">SAVE UP TO 50%</button>
+              </td>
+            </tr>
+
+            <tr class="mobile">
+              <td>
+                <img src="assets/SFS_3up_1.psd" alt="Three beutifull plates of food"/>
+              </td>
+            </tr>
 
             <tr>
               <td style="padding: 0 40px 0 40px; font-size: 15px">
@@ -130,11 +143,22 @@
                     </td>
                   </tr>
                 </table>
+                <table>
+                  <tr>
+                    <td>
+                      <tr>
+              <td align="left" class="mobile-only" >
+                <img src="assets/book.psd" alt="Cover of The New Family Cookbook" height="600" width="600" style="display: block;" />
               </td>
             </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
